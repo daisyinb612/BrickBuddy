@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BrickBuddy</title>
+    <meta
+      name="description"
+      content="BrickBuddy is a step-situated wearable agent for knowledge exploration during brick assembly."
+    />
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="BrickBuddy home">BrickBuddy</a>
+      <nav class="nav" aria-label="Project sections">
+        <a href="#abstract">Abstract</a>
+        <a href="#system">System</a>
+        <a href="#code">Code</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <p class="status">Research prototype</p>
+        <h1>BrickBuddy</h1>
+        <p class="subtitle">
+          A Step-Situated Wearable Agent for Knowledge Exploration During Brick Assembly
+        </p>
+        <p class="note">
+          Project page draft. Publication details, author links, and citation will be updated
+          when they are ready to share publicly.
+        </p>
+        <div class="actions" aria-label="Project links">
+          <a class="button button-primary" href="#code">Code release planned</a>
+          <a class="button" href="#abstract">Read overview</a>
+        </div>
+      </section>
+
+      <section class="teaser" aria-label="BrickBuddy teaser figure">
+        <img
+          src="assets/brickbuddy-teaser.jpg"
+          alt="BrickBuddy captures a smart-glasses egocentric view, checks the current brick assembly step, and provides a voice response grounded in that step."
+        />
+      </section>
+
+      <section id="abstract" class="section">
+        <div class="section-label">Abstract</div>
+        <h2>Step-situated support from the learner's view</h2>
+        <p>
+          Existing brick assembly learning systems often rely on fixed or external views.
+          Smart glasses create an opportunity for agents to support assembly from the user's
+          egocentric view. However, general multimodal agents often lack procedural context,
+          such as the user's current step and next assembly goal.
+        </p>
+        <p>
+          BrickBuddy is a step-situated agent for knowledge exploration during brick assembly.
+          Before assembly, an offline LLM generates step descriptions and knowledge snippets.
+          During assembly, an edge monitor based on a VLM tracks step changes from the smart
+          glasses view. A voice agent uses this step context to provide relevant knowledge,
+          answer user questions, and remain silent during manual work.
+        </p>
+      </section>
+
+      <section id="system" class="section band">
+        <div class="section-label">System</div>
+        <h2>How BrickBuddy works</h2>
+        <div class="steps">
+          <article>
+            <span class="step-index">01</span>
+            <h3>Offline step preparation</h3>
+            <p>
+              BrickLink Studio assets, step images, LDR metadata, and learning materials are
+              turned into step descriptions, knowledge snippets, and realtime prompts.
+            </p>
+          </article>
+          <article>
+            <span class="step-index">02</span>
+            <h3>Egocentric step monitoring</h3>
+            <p>
+              Rokid smart glasses stream first-person frames to a VLM monitor that checks
+              whether the current assembly step has changed.
+            </p>
+          </article>
+          <article>
+            <span class="step-index">03</span>
+            <h3>Voice interaction timing</h3>
+            <p>
+              The voice agent narrates after step transitions, answers step-grounded questions,
+              and stays quiet while the user is actively building.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-label">Demo Scenario</div>
+        <h2>Hall of Prayer for Good Harvests brick assembly</h2>
+        <p>
+          The current demo uses a brick model of the Hall of Prayer for Good Harvests. The task
+          has clear assembly steps and visible cultural features, making it suitable for
+          testing step-aware narration, question answering, and silence during manual work.
+        </p>
+        <p>
+          Pilot sessions suggest that the prototype can preserve user flow while supporting
+          spontaneous knowledge exploration. These observations are preliminary and are used to
+          inform future design of proactive wearable agents for procedural activities.
+        </p>
+      </section>
+
+      <section id="code" class="section band">
+        <div class="section-label">Open Source</div>
+        <h2>Code release planned</h2>
+        <p>
+          The project is being prepared for an open-source release. Source code, setup notes,
+          and selected prompt files can be linked here once the public repository is ready.
+        </p>
+        <div class="release-box">
+          <span>Repository link</span>
+          <strong>To be added</strong>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>
+        BrickBuddy project page draft. Please replace placeholders before publishing.
+      </p>
+    </footer>
+  </body>
+</html>
