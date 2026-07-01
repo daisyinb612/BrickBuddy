@@ -1,0 +1,70 @@
+# OS/editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Local environment and secrets
+**/.env
+**/.env.*
+!**/.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+
+# Node / Expo
+frontend/node_modules/
+frontend/.expo/
+frontend/.expo-shared/
+frontend/dist/
+frontend/web-build/
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+
+# Large local/demo media
+legoagentbackend/testvideo/*.mp4
+legoagentbackend/testvideo/*.mov
+legoagentbackend/testvideo/*.m4v
+legoagentbackend/testvideo/*.avi
+!legoagentbackend/testvideo/README.md
+
+# Local package-manager caches
+.uv-cache/
+frontend/.uv-cache/
+
+# Generated VLM outputs and captured frames
+qwen_legoagent/vlm/captured_frames/
+qwen_legoagent/vlm/example_vlmoutput.json
+qwen_legoagent/vlm/example_vlmstepmemory.json
+qwen_legoagent/vlm/example_vlmlog.csv
+qwen_legoagent/vlm/vlmhistory/*
+!qwen_legoagent/vlm/vlmhistory/example/
+!qwen_legoagent/vlm/vlmhistory/example/**
+
+# Generated realtime outputs
+qwen_legoagent/realtime/realtimehistory/*
+!qwen_legoagent/realtime/realtimehistory/example/
+!qwen_legoagent/realtime/realtimehistory/example/**
+
+# Runtime logs and temporary files
+*.log
+*.tmp
+*.temp
+*.bak

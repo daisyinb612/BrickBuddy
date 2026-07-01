@@ -1,0 +1,117 @@
+{
+  "default_selection": {
+    "vlm_model": "gpt-5.5"
+  },
+  "omni_model": {
+    "gpt-5.5": {
+      "api_key_env": "VLM_API_KEY",
+      "api_key_fallback_envs": [
+        "LEGOGLASS_API_KEY"
+      ],
+      "api_key": "",
+      "model_name": "gpt-5.5",
+      "base_url": "https://xiaoai.plus/v1",
+      "capability": [
+        "multimodal_reasoning",
+        "vlm_progress_check",
+        "text_reasoning"
+      ],
+      "client": "openai-compatible-chat-completions",
+      "protocol": "https",
+      "stream": true,
+      "stream_options": {
+        "include_usage": true
+      },
+      "modalities": [
+        "text"
+      ],
+      "text_only_modalities": [
+        "text"
+      ],
+      "notes": "Standalone Qwen Lego Agent VLM config. Uses VLM_API_KEY/VLM_BASE_URL from root, qwen_legoagent, or legoagentbackend env files."
+    },
+    "gemini-3.5-flash": {
+      "api_key_env": "VLM_API_KEY",
+      "api_key_fallback_envs": [
+        "LEGOGLASS_API_KEY"
+      ],
+      "api_key": "",
+      "model_name": "gemini-3.5-flash",
+      "base_url": "https://xiaoai.plus/v1",
+      "capability": [
+        "multimodal_reasoning",
+        "vlm_progress_check",
+        "text_reasoning"
+      ],
+      "client": "openai-compatible-chat-completions",
+      "protocol": "https",
+      "stream": true,
+      "stream_options": {
+        "include_usage": true
+      },
+      "modalities": [
+        "text"
+      ],
+      "text_only_modalities": [
+        "text"
+      ],
+      "notes": "Standalone Qwen Lego Agent VLM config. Falls back to VLM_GEMINI_FALLBACK_MODEL when configured."
+    },
+    "qwen3.5-omni-flash": {
+      "api_key_env": "DASHSCOPE_API_KEY",
+      "api_key_fallback_envs": [
+        "VLM_QWEN_API_KEY",
+        "QWEN_API_KEY"
+      ],
+      "api_key": "",
+      "model_name": "qwen3.5-omni-flash",
+      "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "capability": [
+        "multimodal_reasoning",
+        "vlm_progress_check",
+        "text_reasoning"
+      ],
+      "client": "openai-compatible-chat-completions",
+      "protocol": "https",
+      "stream": true,
+      "stream_options": {
+        "include_usage": true
+      },
+      "modalities": [
+        "text"
+      ],
+      "text_only_modalities": [
+        "text"
+      ],
+      "notes": "Qwen VLM config. Uses VLM_QWEN_MODEL/LEGOGLASS_OMNI_MODEL, DASHSCOPE_API_KEY, and VLM_QWEN_BASE_URL/LEGOGLASS_OMNI_BASE_URL."
+    },
+    "qwen3-omni-flash": {
+      "api_key_env": "DASHSCOPE_API_KEY",
+      "api_key_fallback_envs": [
+        "VLM_QWEN_API_KEY",
+        "QWEN_API_KEY"
+      ],
+      "api_key": "",
+      "model_name": "qwen3-omni-flash",
+      "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "capability": [
+        "multimodal_reasoning",
+        "vlm_progress_check",
+        "text_reasoning"
+      ],
+      "client": "openai-compatible-chat-completions",
+      "protocol": "https",
+      "stream": true,
+      "stream_options": {
+        "include_usage": true
+      },
+      "modalities": [
+        "text"
+      ],
+      "text_only_modalities": [
+        "text"
+      ],
+      "notes": "Qwen fallback VLM config. Uses DASHSCOPE_API_KEY and VLM_QWEN_BASE_URL/LEGOGLASS_OMNI_BASE_URL."
+    }
+  }
+}

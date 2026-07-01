@@ -1,0 +1,122 @@
+[
+  {
+    "stepid": 1,
+    "stepimage": "images/steps/page_01.png",
+    "stepcomponents": [
+      {
+        "description": "白色大型正方形底板",
+        "path": "images/components/step1/1.png"
+      }
+    ],
+    "stepdescription": "步骤1：第1步地基层，使用预制好的白色大型正方形底板，这是所有后续结构的底座。"
+  },
+  {
+    "stepid": 2,
+    "stepimage": "images/steps/page_02.png",
+    "stepcomponents": [
+      {
+        "description": "4格宽蓝顶带窗墙组件",
+        "path": "images/components/step2/2_1.png"
+      },
+      {
+        "description": "4格宽黄顶带窗墙组件",
+        "path": "images/components/step2/2_2.png"
+      },
+      {
+        "description": "2格宽蓝顶立柱组件",
+        "path": "images/components/step2/2_3.png"
+      },
+      {
+        "description": "2格宽黄顶立柱组件",
+        "path": "images/components/step2/2_4.png"
+      },
+      {
+        "description": "1格宽黄顶细立柱组件",
+        "path": "images/components/step2/2_5.png"
+      },
+      {
+        "description": "1格宽蓝顶细立柱组件",
+        "path": "images/components/step2/2_6.png"
+      }
+    ],
+    "stepdescription": "步骤2：第2步主体墙体，使用6种预制墙柱组件，在白色底板中央按八边形方向围合成红色中空墙体；较宽带窗墙组件作为主要墙面，较窄立柱组件补齐转角和短边，顶部蓝黄装饰带交替连续，四面保留浅蓝色窄窗，形成第一次竖向围合结构。只有所有墙柱已经扣在白色底板上、完整墙体形态清楚可见时才算完成；手持组件、局部弧形、被裁切或遮挡不算完成。"
+  },
+  {
+    "stepid": 3,
+    "stepimage": "images/steps/page_03.png",
+    "stepcomponents": [
+      {
+        "description": "第一层大屋檐整体组件",
+        "path": "images/components/step3/3.png"
+      }
+    ],
+    "stepdescription": "步骤3：第3步第一层大屋檐，使用预制好的大屋檐整体组件，将它水平扣到步骤2红色围墙顶部并让中心对齐；组件应完整覆盖墙体上方，红色外檐向外伸出，蓝色主屋顶圈、浅蓝内圈、深绿色顶板和中心开口同时可见。只有屋檐已经压稳在围墙上、完整屋檐形态可见时才算完成；手里举着、悬在上方、正在对齐不算完成。"
+  },
+  {
+    "stepid": 4,
+    "stepimage": "images/steps/page_04.png",
+    "stepcomponents": [
+      {
+        "description": "绿色-橙色-绿色三层彩色塔块",
+        "path": "images/components/step4/4-1.png"
+      },
+      {
+        "description": "黄色-浅蓝色-黄色三层彩色塔块",
+        "path": "images/components/step4/4-2.png"
+      },
+      {
+        "description": "浅蓝色-黄色-浅蓝色三层彩色塔块",
+        "path": "images/components/step4/4-3.png"
+      }
+    ],
+    "stepdescription": "步骤4：第4步第一层彩色矮塔，使用3种预制彩色塔块，围绕步骤3屋檐中央开口交替扣成一圈较大的彩色矮塔；所有塔块底部压稳在蓝色屋顶中央，整体保持对称。只有塔块已经扣上且完整塔圈形态可见时才算完成；手持、悬空或正在摆放不算完成。"
+  },
+  {
+    "stepid": 5,
+    "stepimage": "images/steps/page_05.png",
+    "stepcomponents": [
+      {
+        "description": "第二层蓝色屋檐整体组件",
+        "path": "images/components/step5/5.png"
+      }
+    ],
+    "stepdescription": "步骤5：第5步第二层蓝色屋檐，使用预制好的第二层屋檐整体组件，将它扣到步骤4彩色矮塔上方并与中心对齐；该组件比步骤3的大屋檐小一圈，红色外檐、蓝色屋面、浅蓝中心圈、深绿色底板和中心方形开口需要作为完整层次出现。只有屋檐已经压稳、完整层次形态可见时才算完成；手里拿着、悬停、未压实不算完成。"
+  },
+  {
+    "stepid": 6,
+    "stepimage": "images/steps/page_06.png",
+    "stepcomponents": [
+      {
+        "description": "绿色-浅蓝色-橙色三层彩色塔块",
+        "path": "images/components/step6/6-1.png"
+      },
+      {
+        "description": "浅蓝色-黄色-浅蓝色三层彩色塔块",
+        "path": "images/components/step6/6-2.png"
+      }
+    ],
+    "stepdescription": "步骤6：第6步第二层彩色小塔，使用2种预制彩色塔块，在步骤5较小蓝色屋檐正中央扣成更小、更高的彩色塔身；塔块应围绕中心对称摆放，整体竖直稳定，颜色包含浅蓝、黄色、亮绿色、橙色，作为继续承托顶部屋顶的中心结构。只有小塔已经扣上且竖直稳定、完整形态可见时才算完成；手持或遮挡关键连接点不算完成。"
+  },
+  {
+    "stepid": 7,
+    "stepimage": "images/steps/page_07.png",
+    "stepcomponents": [
+      {
+        "description": "顶部红蓝屋顶整体组件（合并原第7、8、9步）",
+        "path": "images/components/step7/7.png"
+      }
+    ],
+    "stepdescription": "步骤7：第7步顶部红蓝屋顶组合，使用合并后的顶部红蓝屋顶整体组件，一次扣到步骤6彩色小塔顶部；组件下方红色檐口要压在小塔上方，中间蓝色环形屋面和上方更小的蓝色顶盖要居中对齐，整体比下层继续向中心收拢。只有屋顶组件已经扣稳并完整显示在塔顶时才算完成；举在手中、刚放上但未压稳、被手遮挡连接处不算完成。"
+  },
+  {
+    "stepid": 8,
+    "stepimage": "images/steps/page_08.png",
+    "stepcomponents": [
+      {
+        "description": "最终蓝色小平台与橙色宝顶组件",
+        "path": "images/components/step8/8.png"
+      }
+    ],
+    "stepdescription": "步骤8：第8步最终宝顶，使用预制好的最终顶部组件，将蓝色小平台扣在步骤7蓝色顶盖正中央，并让蓝色2x2与橙色2x2宝顶上下对齐；这是最后一次向上收小的结构，最高点必须居中稳定。只有宝顶已经扣上、最高点完整居中可见时才算完成；手持、悬空、未压实或连接处不可见不算完成。"
+  }
+]

@@ -1,0 +1,5 @@
+frame_index,model,variant,ref_step,ifjudge,now_step,state,changepage,vlm_time
+0,gpt-5.5,full_ref,1,1,1,1,1,2.310
+1,gpt-5.5,full_ref,2,0,2,0,0,2.440
+2,gpt-5.5,full_ref,2,1,2,0.4,0,2.610
+3,gpt-5.5,full_ref,2,1,2,1,1,2.580

@@ -1,0 +1,64 @@
+{
+  "steps": [
+    {
+      "step": 1,
+      "startframe": 0,
+      "endframe": 1,
+      "nextpagetime": "00:00:15"
+    },
+    {
+      "step": 2,
+      "startframe": 2,
+      "endframe": 5,
+      "nextpagetime": "00:01:15"
+    },
+    {
+      "step": 3,
+      "startframe": 6,
+      "endframe": 8,
+      "nextpagetime": "00:02:00"
+    },
+    {
+      "step": 4,
+      "startframe": 9,
+      "endframe": 11,
+      "nextpagetime": "00:02:45"
+    },
+    {
+      "step": 5,
+      "startframe": 12,
+      "endframe": null,
+      "nextpagetime": null
+    },
+    {
+      "step": 6,
+      "startframe": null,
+      "endframe": null,
+      "nextpagetime": null
+    },
+    {
+      "step": 7,
+      "startframe": null,
+      "endframe": null,
+      "nextpagetime": null
+    },
+    {
+      "step": 8,
+      "startframe": null,
+      "endframe": null,
+      "nextpagetime": null
+    },
+    {
+      "step": 9,
+      "startframe": null,
+      "endframe": null,
+      "nextpagetime": null
+    },
+    {
+      "step": 10,
+      "startframe": null,
+      "endframe": null,
+      "nextpagetime": null
+    }
+  ]
+}

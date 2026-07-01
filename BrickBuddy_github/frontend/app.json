@@ -1,0 +1,15 @@
+{
+  "expo": {
+    "name": "LegoGlass",
+    "slug": "lego-glass",
+    "version": "0.1.0",
+    "orientation": "default",
+    "userInterfaceStyle": "light",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "web": {
+      "bundler": "metro"
+    }
+  }
+}

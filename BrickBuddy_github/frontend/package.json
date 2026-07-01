@@ -1,0 +1,32 @@
+{
+  "name": "lego-glass-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "start": "expo start",
+    "web": "expo start --web",
+    "ios": "expo start --ios",
+    "android": "expo start --android",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@expo/metro-runtime": "~56.0.13",
+    "expo": "~56.0.5",
+    "expo-document-picker": "~56.0.4",
+    "expo-status-bar": "~56.0.4",
+    "flv.js": "^1.6.2",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "react-native": "0.85.3",
+    "react-native-web": "^0.21.2"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.15",
+    "@types/react-dom": "^19.2.3",
+    "typescript": "^6.0.3"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
