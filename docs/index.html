@@ -6,6 +6,7 @@
     <title>BrickBuddy</title>
     <meta
       name="description"
+      data-i18n-content="meta.description"
       content="BrickBuddy is a step-situated wearable agent for knowledge exploration during brick assembly."
     />
     <link rel="icon" href="data:," />
@@ -13,50 +14,57 @@
   </head>
   <body>
     <header class="site-header">
-      <a class="wordmark" href="#top" aria-label="BrickBuddy home">BrickBuddy</a>
-      <nav class="nav" aria-label="Project sections">
-        <a href="#abstract">Abstract</a>
-        <a href="#system">System</a>
-        <a href="#demo">Demo</a>
-        <a href="#code">Code</a>
-      </nav>
+      <a class="wordmark" href="#top" aria-label="BrickBuddy home" data-i18n-aria-label="nav.home">BrickBuddy</a>
+      <div class="header-actions">
+        <nav class="nav" aria-label="Project sections" data-i18n-aria-label="nav.sections">
+          <a href="#abstract" data-i18n="nav.abstract">Abstract</a>
+          <a href="#system" data-i18n="nav.system">System</a>
+          <a href="#demo" data-i18n="nav.demo">Demo</a>
+          <a href="#code" data-i18n="nav.code">Code</a>
+        </nav>
+        <div class="language-switch" role="group" aria-label="Language selection" data-i18n-aria-label="language.label">
+          <button class="language-button" type="button" data-lang="en" aria-pressed="true">EN</button>
+          <button class="language-button" type="button" data-lang="zh" aria-pressed="false">中文</button>
+        </div>
+      </div>
     </header>
 
     <main id="top">
       <section class="hero">
-        <p class="status">Research prototype</p>
+        <p class="status" data-i18n="hero.status">Research prototype</p>
         <h1>BrickBuddy</h1>
-        <p class="subtitle">
+        <p class="subtitle" data-i18n="hero.subtitle">
           A Step-Situated Wearable Agent for Knowledge Exploration During Brick Assembly
         </p>
-        <p class="note">
+        <p class="note" data-i18n="hero.note">
           Project page draft. Publication details, author links, and citation will be updated
           when they are ready to share publicly.
         </p>
-        <div class="actions" aria-label="Project links">
-          <a class="button button-primary" href="https://www.youtube.com/watch?v=3-L7GyE6FCs">Watch demo</a>
-          <a class="button" href="https://github.com/daisyinb612/BrickBuddy">Code</a>
-          <a class="button" href="#abstract">Read overview</a>
+        <div class="actions" aria-label="Project links" data-i18n-aria-label="hero.links">
+          <a class="button button-primary" href="https://www.youtube.com/watch?v=3-L7GyE6FCs" data-i18n="hero.watchDemo">Watch demo</a>
+          <a class="button" href="https://github.com/daisyinb612/BrickBuddy" data-i18n="hero.code">Code</a>
+          <a class="button" href="#abstract" data-i18n="hero.readOverview">Read overview</a>
         </div>
       </section>
 
-      <section class="project-figure teaser" aria-label="BrickBuddy teaser figure">
+      <section class="project-figure teaser" aria-label="BrickBuddy teaser figure" data-i18n-aria-label="teaser.label">
         <img
           src="assets/brickbuddy-teaser.jpg"
           alt="BrickBuddy captures a smart-glasses egocentric view, checks the current brick assembly step, and provides a voice response grounded in that step."
+          data-i18n-alt="teaser.alt"
         />
       </section>
 
       <section id="abstract" class="section">
-        <div class="section-label">Abstract</div>
-        <h2>Step-situated support from the learner's view</h2>
-        <p>
+        <div class="section-label" data-i18n="abstract.label">Abstract</div>
+        <h2 data-i18n="abstract.title">Step-situated support from the learner's view</h2>
+        <p data-i18n="abstract.paragraph1">
           Existing brick assembly learning systems often rely on fixed or external views.
           Smart glasses create an opportunity for agents to support assembly from the user's
           egocentric view. However, general multimodal agents often lack procedural context,
           such as the user's current step and next assembly goal.
         </p>
-        <p>
+        <p data-i18n="abstract.paragraph2">
           BrickBuddy is a step-situated agent for knowledge exploration during brick assembly.
           Before assembly, an offline LLM generates step descriptions and knowledge snippets.
           During assembly, an edge monitor based on a VLM tracks step changes from the smart
@@ -66,60 +74,218 @@
       </section>
 
       <section id="system" class="section band system-band">
-        <div class="section-label">System</div>
+        <div class="section-label" data-i18n="system.label">System</div>
         <figure class="project-figure system-figure">
           <img
             src="assets/brickbuddy-system.jpg"
             alt="BrickBuddy system pipeline showing offline preparation, egocentric step monitoring, and step-situated voice interaction."
+            data-i18n-alt="system.alt"
           />
         </figure>
       </section>
 
       <section id="demo" class="section">
-        <div class="section-label">Demo Scenario</div>
-        <h2>Hall of Prayer for Good Harvests brick assembly</h2>
-        <p>
+        <div class="section-label" data-i18n="demo.label">Demo Scenario</div>
+        <h2 data-i18n="demo.title">Hall of Prayer for Good Harvests brick assembly</h2>
+        <p data-i18n="demo.paragraph1">
           The current demo uses a brick model of the Hall of Prayer for Good Harvests. The task
           has clear assembly steps and visible cultural features, making it suitable for
           testing step-aware narration, question answering, and silence during manual work.
         </p>
-        <p>
+        <p data-i18n="demo.paragraph2">
           Pilot sessions suggest that the prototype can preserve user flow while supporting
           spontaneous knowledge exploration. These observations are preliminary and are used to
           inform future design of proactive wearable agents for procedural activities.
         </p>
-        <div class="video-embed" aria-label="BrickBuddy demo video preview">
+        <div class="video-embed" aria-label="BrickBuddy demo video preview" data-i18n-aria-label="demo.videoLabel">
           <iframe
             src="https://www.youtube-nocookie.com/embed/3-L7GyE6FCs"
             title="BrickBuddy demo video"
+            data-i18n-title="demo.videoTitle"
             loading="lazy"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
           ></iframe>
         </div>
         <p class="video-link">
-          <a href="https://www.youtube.com/watch?v=3-L7GyE6FCs">Open the demo on YouTube</a>
+          <a href="https://www.youtube.com/watch?v=3-L7GyE6FCs" data-i18n="demo.openYoutube">Open the demo on YouTube</a>
         </p>
       </section>
 
       <section id="code" class="section band">
-        <div class="section-label">Open Source</div>
-        <h2>Source code</h2>
-        <p>
+        <div class="section-label" data-i18n="code.label">Open Source</div>
+        <h2 data-i18n="code.title">Source code</h2>
+        <p data-i18n="code.paragraph">
           Source code, setup notes, and selected prompt files are available in the public
           repository.
         </p>
         <div class="release-box">
-          <span>Repository link</span>
+          <span data-i18n="code.repositoryLink">Repository link</span>
           <strong><a href="https://github.com/daisyinb612/BrickBuddy">daisyinb612/BrickBuddy</a></strong>
         </div>
       </section>
     </main>
 
     <footer class="footer">
-      <p>
+      <p data-i18n="footer.text">
         BrickBuddy project page.
       </p>
     </footer>
+    <script>
+      const i18n = {
+        en: {
+          "meta.description": "BrickBuddy is a step-situated wearable agent for knowledge exploration during brick assembly.",
+          "nav.home": "BrickBuddy home",
+          "nav.sections": "Project sections",
+          "nav.abstract": "Abstract",
+          "nav.system": "System",
+          "nav.demo": "Demo",
+          "nav.code": "Code",
+          "language.label": "Language selection",
+          "hero.status": "Research prototype",
+          "hero.subtitle": "A Step-Situated Wearable Agent for Knowledge Exploration During Brick Assembly",
+          "hero.note": "Project page draft. Publication details, author links, and citation will be updated when they are ready to share publicly.",
+          "hero.links": "Project links",
+          "hero.watchDemo": "Watch demo",
+          "hero.code": "Code",
+          "hero.readOverview": "Read overview",
+          "teaser.label": "BrickBuddy teaser figure",
+          "teaser.alt": "BrickBuddy captures a smart-glasses egocentric view, checks the current brick assembly step, and provides a voice response grounded in that step.",
+          "abstract.label": "Abstract",
+          "abstract.title": "Step-situated support from the learner's view",
+          "abstract.paragraph1": "Existing brick assembly learning systems often rely on fixed or external views. Smart glasses create an opportunity for agents to support assembly from the user's egocentric view. However, general multimodal agents often lack procedural context, such as the user's current step and next assembly goal.",
+          "abstract.paragraph2": "BrickBuddy is a step-situated agent for knowledge exploration during brick assembly. Before assembly, an offline LLM generates step descriptions and knowledge snippets. During assembly, an edge monitor based on a VLM tracks step changes from the smart glasses view. A voice agent uses this step context to provide relevant knowledge, answer user questions, and remain silent during manual work.",
+          "system.label": "System",
+          "system.alt": "BrickBuddy system pipeline showing offline preparation, egocentric step monitoring, and step-situated voice interaction.",
+          "demo.label": "Demo Scenario",
+          "demo.title": "Hall of Prayer for Good Harvests brick assembly",
+          "demo.paragraph1": "The current demo uses a brick model of the Hall of Prayer for Good Harvests. The task has clear assembly steps and visible cultural features, making it suitable for testing step-aware narration, question answering, and silence during manual work.",
+          "demo.paragraph2": "Pilot sessions suggest that the prototype can preserve user flow while supporting spontaneous knowledge exploration. These observations are preliminary and are used to inform future design of proactive wearable agents for procedural activities.",
+          "demo.videoLabel": "BrickBuddy demo video preview",
+          "demo.videoTitle": "BrickBuddy demo video",
+          "demo.openYoutube": "Open the demo on YouTube",
+          "code.label": "Open Source",
+          "code.title": "Source code",
+          "code.paragraph": "Source code, setup notes, and selected prompt files are available in the public repository.",
+          "code.repositoryLink": "Repository link",
+          "footer.text": "BrickBuddy project page."
+        },
+        zh: {
+          "meta.description": "BrickBuddy 是一个面向积木拼搭知识探索的步骤情境化可穿戴智能体。",
+          "nav.home": "BrickBuddy 首页",
+          "nav.sections": "项目分区",
+          "nav.abstract": "摘要",
+          "nav.system": "系统",
+          "nav.demo": "演示",
+          "nav.code": "代码",
+          "language.label": "语言选择",
+          "hero.status": "研究原型",
+          "hero.subtitle": "面向积木拼搭知识探索的步骤情境化可穿戴智能体",
+          "hero.note": "项目页面草稿。论文信息、作者链接和引用格式会在适合公开分享时继续更新。",
+          "hero.links": "项目链接",
+          "hero.watchDemo": "观看演示",
+          "hero.code": "代码",
+          "hero.readOverview": "阅读概览",
+          "teaser.label": "BrickBuddy 项目概览图",
+          "teaser.alt": "BrickBuddy 通过智能眼镜获取第一视角画面，检查当前积木拼搭步骤，并基于该步骤提供语音回应。",
+          "abstract.label": "摘要",
+          "abstract.title": "来自学习者视角的步骤情境化支持",
+          "abstract.paragraph1": "现有的积木拼搭学习系统通常依赖固定视角或外部视角。智能眼镜让智能体有机会从用户的第一视角支持拼搭过程。然而，通用多模态智能体往往缺少程序性上下文，例如用户当前所处步骤以及下一步拼搭目标。",
+          "abstract.paragraph2": "BrickBuddy 是一个面向积木拼搭知识探索的步骤情境化智能体。在拼搭前，离线 LLM 会生成步骤描述和知识片段。在拼搭过程中，基于 VLM 的边缘监测模块会从智能眼镜视角追踪步骤变化。语音智能体利用这些步骤上下文提供相关知识、回答用户问题，并在用户专注手动操作时保持安静。",
+          "system.label": "系统",
+          "system.alt": "BrickBuddy 系统流程图，展示离线准备、第一视角步骤监测和步骤情境化语音交互。",
+          "demo.label": "演示场景",
+          "demo.title": "祈年殿积木拼搭",
+          "demo.paragraph1": "当前演示使用祈年殿积木模型。这个任务具有清晰的拼搭步骤和可见的文化特征，适合测试步骤感知讲解、问答，以及用户手动操作时的静默陪伴。",
+          "demo.paragraph2": "初步试验表明，该原型能够在支持自发知识探索的同时尽量保持用户的操作流畅性。这些观察仍是初步结果，将用于指导未来面向程序性活动的主动式可穿戴智能体设计。",
+          "demo.videoLabel": "BrickBuddy 演示视频预览",
+          "demo.videoTitle": "BrickBuddy 演示视频",
+          "demo.openYoutube": "在 YouTube 打开演示",
+          "code.label": "开源",
+          "code.title": "源代码",
+          "code.paragraph": "源代码、配置说明和部分提示词文件已放在公开仓库中。",
+          "code.repositoryLink": "仓库链接",
+          "footer.text": "BrickBuddy 项目页面。"
+        }
+      };
+
+      const languageButtons = document.querySelectorAll("[data-lang]");
+
+      function getStoredLanguage() {
+        try {
+          return window.localStorage.getItem("brickbuddy-language");
+        } catch {
+          return null;
+        }
+      }
+
+      function setStoredLanguage(language) {
+        try {
+          window.localStorage.setItem("brickbuddy-language", language);
+        } catch {
+          return;
+        }
+      }
+
+      const storedLanguage = getStoredLanguage();
+      const initialLanguage = storedLanguage === "zh" || storedLanguage === "en" ? storedLanguage : "en";
+
+      function translate(language) {
+        const dictionary = i18n[language] || i18n.en;
+
+        document.documentElement.lang = language === "zh" ? "zh-CN" : "en";
+
+        document.querySelectorAll("[data-i18n]").forEach((element) => {
+          const key = element.getAttribute("data-i18n");
+          if (dictionary[key]) {
+            element.textContent = dictionary[key];
+          }
+        });
+
+        document.querySelectorAll("[data-i18n-content]").forEach((element) => {
+          const key = element.getAttribute("data-i18n-content");
+          if (dictionary[key]) {
+            element.setAttribute("content", dictionary[key]);
+          }
+        });
+
+        document.querySelectorAll("[data-i18n-alt]").forEach((element) => {
+          const key = element.getAttribute("data-i18n-alt");
+          if (dictionary[key]) {
+            element.setAttribute("alt", dictionary[key]);
+          }
+        });
+
+        document.querySelectorAll("[data-i18n-aria-label]").forEach((element) => {
+          const key = element.getAttribute("data-i18n-aria-label");
+          if (dictionary[key]) {
+            element.setAttribute("aria-label", dictionary[key]);
+          }
+        });
+
+        document.querySelectorAll("[data-i18n-title]").forEach((element) => {
+          const key = element.getAttribute("data-i18n-title");
+          if (dictionary[key]) {
+            element.setAttribute("title", dictionary[key]);
+          }
+        });
+
+        languageButtons.forEach((button) => {
+          const isActive = button.getAttribute("data-lang") === language;
+          button.classList.toggle("is-active", isActive);
+          button.setAttribute("aria-pressed", String(isActive));
+        });
+
+        setStoredLanguage(language);
+      }
+
+      languageButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          translate(button.getAttribute("data-lang"));
+        });
+      });
+
+      translate(initialLanguage);
+    </script>
   </body>
 </html>

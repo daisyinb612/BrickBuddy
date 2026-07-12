@@ -54,6 +54,12 @@ a {
   text-decoration: none;
 }
 
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: clamp(14px, 3vw, 28px);
+}
+
 .nav {
   display: flex;
   gap: clamp(14px, 3vw, 28px);
@@ -67,6 +73,44 @@ a {
 
 .nav a:hover {
   color: var(--brick-dark);
+}
+
+.language-switch {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px;
+  border: 1px solid rgba(29, 27, 24, 0.12);
+  border-radius: 8px;
+  background: rgba(255, 253, 248, 0.72);
+  box-shadow: 0 8px 24px rgba(45, 35, 24, 0.06);
+}
+
+.language-button {
+  min-width: 48px;
+  min-height: 32px;
+  padding: 6px 10px;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.language-button:hover {
+  color: var(--brick-dark);
+}
+
+.language-button.is-active {
+  background: var(--ink);
+  color: #fffaf3;
+}
+
+.language-button:focus-visible {
+  outline: 3px solid rgba(30, 118, 111, 0.28);
+  outline-offset: 2px;
 }
 
 main {
@@ -304,9 +348,20 @@ h3 {
     gap: 8px;
   }
 
+  .header-actions {
+    width: 100%;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+
   .nav {
     width: 100%;
     justify-content: space-between;
+  }
+
+  .language-switch {
+    align-self: flex-start;
   }
 
   .hero {
